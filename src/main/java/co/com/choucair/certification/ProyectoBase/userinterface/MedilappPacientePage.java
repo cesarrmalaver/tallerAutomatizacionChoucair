@@ -11,6 +11,8 @@ public class MedilappPacientePage extends PageObject {
             .located(By.xpath("/html/body/div[2]/div[1]/div/ul/li[2]/a"));
     public static final Target BTN_MODULO_PACIENTES = Target.the("Boton para ingresar al módulo de pacientes")
             .locatedBy("//a[contains(text(),'Lista de Pacientes')]");
+    public static final Target BTN_CREAR_PACIENTE = Target.the("Boton para crear un nuevo paciente").
+            located(By.xpath("//a[contains(text(),'Crear Paciente')]"));
     public static final Target ENCABEZADO_TABLA_PACIENTES = Target.the("Tabla de pacientes")
             .locatedBy("//*[@id=\"datable_1\"]/thead");
     public static final Target BTN_ACTUALIZA_PACIENTE = Target.the("Boton para actualizar paciente")
